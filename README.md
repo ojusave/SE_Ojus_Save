@@ -5,7 +5,7 @@ What this application does:
 ```
 1. Tracks the user who visited the monster edit page, here an event is logged with the event name: "monster_edit".
 
-2. Tracks the user who visited the monster view page, here an event is logged with the event name: ""monster_view".
+2. Tracks the user who visited the monster view page, here an event is logged with the event name: "monster_view".
 
 3. Uses Asynchronous methods to get a shortURL with parameters and this url is displayed beside share button on monster view activity. 
 
