@@ -93,9 +93,7 @@ public class MonsterViewerActivity extends FragmentActivity implements InfoFragm
             String monsterName = myMonsterObject.getMonsterName(); //getString(R.string.monster_name);
 
             LinkProperties linkProperties = createSmsLinkProperties();
-
             ContentMetadata cm = createContentMetadata(myMonsterObject);
-
             BranchUniversalObject buo = createBranchUniversalObject(cm, myMonsterObject);
 
             buo.generateShortUrl(getApplicationContext(), linkProperties, new Branch.BranchLinkCreateListener() {

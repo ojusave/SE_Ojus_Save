@@ -10,7 +10,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.json.JSONObject;
 
@@ -29,6 +28,8 @@ public class SplashActivity extends Activity {
     ImageView imgSplash1, imgSplash2;
     Context mContext;
     final int ANIM_DURATION = 1500;
+    boolean isAsyncTaskComplete = false;
+    MonsterObject deepLinkMonsterObj;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,7 @@ public class SplashActivity extends Activity {
         // Initialize Branch session.
         Branch branch = Branch.getInstance();
 
+
         // Branch init
         branch.initSession(new Branch.BranchReferralInitListener() {
             @Override
@@ -62,46 +64,38 @@ public class SplashActivity extends Activity {
                     // params are the deep linked params associated with the link that the user clicked -> was re-directed to this app
                     // params will be empty if no data found
                     // ... insert custom logic here ...
-                    if(proceedToViewerActivityIfMonsterDataFound(referringParams)){
-                        proceedToAppTransparent();
-                    }
+                    createDeeplinkMonsterIfFound(referringParams);
                     Log.i("BRANCH SDK", referringParams.toString());
                 } else {
                     Log.i("BRANCH SDK", error.getMessage());
                 }
+                isAsyncTaskComplete = true;
             }
         }, this.getIntent().getData(), this);
 
+//        while(!isAsyncTaskComplete) {
+//        }
         proceedToAppTransparent();
+
     }
 
-    private boolean proceedToViewerActivityIfMonsterDataFound(JSONObject referringParams){
+    private void createDeeplinkMonsterIfFound(JSONObject referringParams){
         // If a monster was linked to, open the viewer Activity to that Monster.
-        MonsterObject monsterObject = new MonsterObject();
+        MonsterObject obj = new MonsterObject();
         try {
-            monsterObject.setMonsterName(referringParams.getString(MonsterPreferences.KEY_MONSTER_NAME));
-            monsterObject.setColorIndex(Integer.parseInt(referringParams.getString(MonsterPreferences.KEY_COLOR_INDEX)));
-            monsterObject.setBodyIndex(Integer.parseInt(referringParams.getString(MonsterPreferences.KEY_BODY_INDEX)));
-            monsterObject.setFaceIndex(Integer.parseInt(referringParams.getString(MonsterPreferences.KEY_FACE_INDEX)));
-            monsterObject.setMonsterDescription(referringParams.getString(MonsterPreferences.KEY_MONSTER_DESCRIPTION));
+            obj.setMonsterName(referringParams.getString(MonsterPreferences.KEY_MONSTER_NAME));
+            obj.setColorIndex(Integer.parseInt(referringParams.getString(MonsterPreferences.KEY_COLOR_INDEX)));
+            obj.setBodyIndex(Integer.parseInt(referringParams.getString(MonsterPreferences.KEY_BODY_INDEX)));
+            obj.setFaceIndex(Integer.parseInt(referringParams.getString(MonsterPreferences.KEY_FACE_INDEX)));
+            obj.setMonsterDescription(referringParams.getString(MonsterPreferences.KEY_MONSTER_DESCRIPTION));
 
         }catch (Exception e){
+            return;
 //            Toast.makeText(getApplicationContext(), "improper monster data", Toast.LENGTH_LONG).show();
-            return false;
         }
-        Intent intent;
-
-        if (monsterObject.getMonsterName() == null || monsterObject.getMonsterName().length() == 0) {
-            intent = new Intent(SplashActivity.this, MonsterCreatorActivity.class);
-//            Toast.makeText(getApplicationContext(), "improper monster data", Toast.LENGTH_LONG).show();
-        } else {
-            // Create a default monster
-            intent = new Intent(SplashActivity.this, MonsterViewerActivity.class);
-            intent.putExtra(MonsterViewerActivity.MY_MONSTER_OBJ_KEY, monsterObject);
-        }
-
-        return true;
+        deepLinkMonsterObj = obj;
     }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -119,7 +113,10 @@ public class SplashActivity extends Activity {
         MonsterPreferences prefs = MonsterPreferences.getInstance(getApplicationContext());
         Intent intent;
 
-        if (prefs.getMonsterName() == null || prefs.getMonsterName().length() == 0) {
+        if(null != deepLinkMonsterObj){
+            intent = new Intent(SplashActivity.this, MonsterViewerActivity.class);
+            intent.putExtra(MonsterViewerActivity.MY_MONSTER_OBJ_KEY, deepLinkMonsterObj);
+        }else if (prefs.getMonsterName() == null || prefs.getMonsterName().length() == 0) {
             prefs.setMonsterName("");
             intent = new Intent(SplashActivity.this, MonsterCreatorActivity.class);
         } else {

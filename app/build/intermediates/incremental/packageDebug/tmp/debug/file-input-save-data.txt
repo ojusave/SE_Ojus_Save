@@ -1,7 +1,19 @@
 #Internal package file, do not edit.
-#Sat Jul 21 21:37:33 CDT 2018
+#Sat Jul 21 22:45:26 CDT 2018
+1.base=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\218
+2.path=classes.dex
 0.baseType=DIRECTORY
-0.base=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\102
+3.baseType=DIRECTORY
+2.base=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\217
+3.set=DEX
+2.set=DEX
+1.baseType=DIRECTORY
+3.path=classes.dex
+count=4
+1.set=DEX
 0.path=classes.dex
+3.base=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\216
 0.set=DEX
-count=1
+0.base=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\219
+2.baseType=DIRECTORY
+1.path=classes.dex

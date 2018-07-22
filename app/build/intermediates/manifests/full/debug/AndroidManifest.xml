@@ -19,7 +19,8 @@
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:largeHeap="true" >
+        android:largeHeap="true"
+        android:testOnly="true" >
         <activity
             android:name="io.branch.branchster.activity.SplashActivity"
             android:label="@string/app_name"
@@ -88,7 +89,7 @@
         <!-- Branch install referrer tracking -->
         <receiver
             android:name="io.branch.referral.InstallListener"
-            android:exported="true" >
+            android:exported="false" >
             <intent-filter>
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>

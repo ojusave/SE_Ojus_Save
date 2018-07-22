@@ -1,4 +1,13 @@
-#Sat Jul 21 21:37:33 CDT 2018
-base.0=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\102
+#Sat Jul 21 22:45:26 CDT 2018
+path.3=classes.dex
+path.2=classes.dex
+path.1=classes.dex
 path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.3=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\218
+base.2=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\217
+base.1=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\219
+base.0=D\:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\216

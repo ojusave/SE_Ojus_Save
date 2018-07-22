@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ojusave/Downloads/Branchster-Android-No-SDK/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "D:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "/Users/ojusave/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/08f5e7c74e2eb03ff1073208fc2a064f/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "248"
-                    },
-                    "to": {
-                        "startLines": "295",
-                        "startColumns": "4",
-                        "startOffsets": "21494",
-                        "endLines": "297",
-                        "endColumns": "12",
-                        "endOffsets": "21687"
-                    }
-                },
-                {
-                    "source": "/Users/ojusave/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/b0025f7454ca9b915dbd93c8408e65a9/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\rudra\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\e889173431050bbd48c4e3dd6d5d19bc\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,23,24,25,26,28,30,31,32,33,34,36,38,40,42,44,46,47,52,54,56,57,58,60,62,63,64,65,66,67,111,114,158,161,164,166,168,170,173,175,178,179,180,183,184,185,186,187,188,191,192,194,196,198,200,204,206,207,208,209,211,215,217,219,220,221,222,223,225,226,227,237,238,239,251,263,264,265,268,271,272,275,276,279,282",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +23,26 @@
                     }
                 },
                 {
-                    "source": "/Users/ojusave/Downloads/Branchster-Android-No-SDK/app/src/main/res/values-v21/style.xml",
+                    "source": "C:\\Users\\rudra\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.2.0.aar\\341d46cd862050de2d48631d32315795\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "248"
+                    },
+                    "to": {
+                        "startLines": "295",
+                        "startColumns": "4",
+                        "startOffsets": "21494",
+                        "endLines": "297",
+                        "endColumns": "12",
+                        "endOffsets": "21687"
+                    }
+                },
+                {
+                    "source": "D:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\src\\main\\res\\values-v21\\style.xml",
                     "from": {
                         "startLines": "3,7,10",
                         "startColumns": "4,4,4",
