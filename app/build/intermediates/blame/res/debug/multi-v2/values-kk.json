@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
+            "outputFile": "/Users/ojusave/Downloads/Branchster-Android-No-SDK/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rudra\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.8.0.aar\\ed39f2c6fbb80fb8bf45a8f054f0dff3\\res\\values-kk\\values.xml",
+                    "source": "/Users/ojusave/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/965b2441bcdfb2e59c7f1126cfc92e53/res/values-kk/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rudra\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-9.8.0.aar\\568deb58e0066a503ef1d15c48077334\\res\\values-kk\\values.xml",
+                    "source": "/Users/ojusave/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.8.0.aar/b99891dc242d9c3c2e173a9e1fa76e3a/res/values-kk/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rudra\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-9.8.0.aar\\340a1c2016dbf9c120ce0af23f4dcc48\\res\\values-kk\\values.xml",
+                    "source": "/Users/ojusave/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.8.0.aar/c83af12ad1e4b8df0ced337af43f5ce6/res/values-kk/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
+            "outputFile": "/Users/ojusave/Downloads/Branchster-Android-No-SDK/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml",
             "map": [
                 {
-                    "source": "D:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\src\\main\\res\\values-xxhdpi\\dimens.xml",
+                    "source": "/Users/ojusave/Downloads/Branchster-Android-No-SDK/app/src/main/res/values-xxhdpi/dimens.xml",
                     "from": {
                         "startLines": "3,4,7,8",
                         "startColumns": "4,4,4,4",

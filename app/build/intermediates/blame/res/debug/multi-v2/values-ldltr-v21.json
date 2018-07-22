@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "outputFile": "/Users/ojusave/Downloads/Branchster-Android-No-SDK/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rudra\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\e889173431050bbd48c4e3dd6d5d19bc\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "/Users/ojusave/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/b0025f7454ca9b915dbd93c8408e65a9/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

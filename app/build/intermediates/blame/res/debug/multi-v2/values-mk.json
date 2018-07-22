@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\dev\\Ojus interview Branch\\Branchster-Android-No-SDK\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+            "outputFile": "/Users/ojusave/Downloads/Branchster-Android-No-SDK/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\rudra\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-9.8.0.aar\\ed39f2c6fbb80fb8bf45a8f054f0dff3\\res\\values-mk\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "283,388,581,712,820,1024,1155,1290,1506,1611,1808,1939,2151,2336,2431,2521",
-                        "endColumns": "104,192,130,107,203,130,134,215,104,196,130,211,184,94,89,103",
-                        "endOffsets": "387,580,711,819,1023,1154,1289,1505,1610,1807,1938,2150,2335,2430,2520,2624"
-                    },
-                    "to": {
-                        "startLines": "3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "178,287,480,615,727,931,1066,1401,1617,1726,1923,2058,2270,2459,2558,2652",
-                        "endColumns": "108,192,134,111,203,134,138,215,108,196,134,211,188,98,93,107",
-                        "endOffsets": "282,475,610,722,926,1061,1200,1612,1721,1918,2053,2265,2454,2553,2647,2755"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\rudra\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-9.8.0.aar\\340a1c2016dbf9c120ce0af23f4dcc48\\res\\values-mk\\values.xml",
+                    "source": "/Users/ojusave/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.8.0.aar/c83af12ad1e4b8df0ced337af43f5ce6/res/values-mk/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\rudra\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-9.8.0.aar\\568deb58e0066a503ef1d15c48077334\\res\\values-mk\\values.xml",
+                    "source": "/Users/ojusave/.gradle/caches/transforms-1/files-1.1/play-services-base-9.8.0.aar/965b2441bcdfb2e59c7f1126cfc92e53/res/values-mk/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "283,388,581,712,820,1024,1155,1290,1506,1611,1808,1939,2151,2336,2431,2521",
+                        "endColumns": "104,192,130,107,203,130,134,215,104,196,130,211,184,94,89,103",
+                        "endOffsets": "387,580,711,819,1023,1154,1289,1505,1610,1807,1938,2150,2335,2430,2520,2624"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "178,287,480,615,727,931,1066,1401,1617,1726,1923,2058,2270,2459,2558,2652",
+                        "endColumns": "108,192,134,111,203,134,138,215,108,196,134,211,188,98,93,107",
+                        "endOffsets": "282,475,610,722,926,1061,1200,1612,1721,1918,2053,2265,2454,2553,2647,2755"
+                    }
+                },
+                {
+                    "source": "/Users/ojusave/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.8.0.aar/b99891dc242d9c3c2e173a9e1fa76e3a/res/values-mk/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
