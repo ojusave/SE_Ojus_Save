@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.branch.branchster"
+    android:versionCode="20"
+    android:versionName="1.4.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="io.branch.branchster.BranchApplication"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+
+        <activity
+            android:name="io.branch.branchster.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"
+            android:launchMode="singleTask" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <data android:scheme="branchsters" />
+            	<action android:name="android.intent.action.VIEW" />
+            	<category android:name="android.intent.category.DEFAULT" />
+            	<category android:name="android.intent.category.BROWSABLE" />
+        	</intent-filter>
+
+            <!-- Branch URI scheme -->
+            <intent-filter >
+                <data android:scheme="branchsters" android:host="open" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="aiz4.app.link" />
+                <data android:scheme="https" android:host="aiz4-alternate.app.link" />
+                <data android:scheme="branchsters"/> <!-- android:host="ojussave" />-->
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name="io.branch.branchster.activity.MonsterViewerActivity"
+            android:theme="@style/Theme.Default"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="io.branch.branchster.activity.MonsterCreatorActivity"
+            android:theme="@style/Theme.Default"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- Branch's live key-->
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_oct7Mv79v8F59Jx0rgppdokovBcVvxWS" />
+        <!-- Branch's test key-->
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_amuXPB48r0B16HzXvpemldicBAkNsD98" />
+        <!-- Branch testing (TestMode "true" to simulate fresh installs on dev environment) -->
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />
+        <!-- Branch install referrer tracking -->
+        <receiver android:name="io.branch.referral.InstallListener" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+    </application>
+
+</manifest>
